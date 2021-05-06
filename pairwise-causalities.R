@@ -1,7 +1,7 @@
 library(xts);library("quantmod")
 library(Rpdb);library(dplyr)
 
-get_aggregated_returns <- function(sampling_period,vol){
+get_aggregated_returns <- function(sampling_period){
   returns <- xts()
   per<- sampling_period
   for(i in seq_along(markets)) {
